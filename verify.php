@@ -10,7 +10,7 @@
      if ($data->success == true) {
          echo "Verified ! You Can Back To Discord ";
          $cu = curl_init();
-         curl_setopt($cu,CURLOPT_URL,"localhost:8081/verified/$token");
+         curl_setopt($cu,CURLOPT_URL,"localhost/verified/$token");
          curl_setopt($cu,CURLOPT_RETURNTRANSFER,TRUE);
          $res = curl_exec($cu);
      } else {
