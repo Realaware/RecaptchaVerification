@@ -51,6 +51,7 @@ app.get('/verified/:token', function(req,res) {
             break;
         }
     }
+    UserTokens.filter(item => item.Token === req.params.token);
     Client.users.cache.get(id).send("인증이 완료되었습니다 !")
     res.send("yeah")
 
