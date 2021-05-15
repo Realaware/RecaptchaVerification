@@ -2,9 +2,7 @@
 php + node js recaptcha verification.
 
 
-
-
-# Must read.
+#
 - i used apache server port as 81.
 - if you want to change it, You should change port in code.
 - site key must be yours.
